@@ -1,11 +1,43 @@
 .hero
 {
-    &__image_container
+    padding: 1rem;
+    &__ctx
     {
-
+        display: grid;
+        gap: 1rem;
     }
     &__image
     {
         width: 100%;
+    }
+
+    &__title
+    {
+        font-weight: $font-bolder;
+        font-size: 2.5rem;
+        color: $very-dark-blue;
+    }
+
+    &__content
+    {
+        color: $dark-grayish-blue;
+
+    }
+    &__content_container
+    {
+        display: grid;
+        gap: 1rem;
+    }
+    &__button
+    {
+        background-color: $red;
+        outline: none;
+        border: none;
+        width: 12rem;
+        padding: 1rem 0;
+        text-transform: uppercase;
+        color: $off-white;
+        font-weight: $font-bold;
+        letter-spacing: 2px;
     }
 }
