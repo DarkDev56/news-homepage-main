@@ -1,6 +1,5 @@
 .hero
 {
-    padding: 1rem;
     &__ctx
     {
         display: grid;
@@ -39,5 +38,10 @@
         color: $off-white;
         font-weight: $font-bold;
         letter-spacing: 2px;
+        cursor: pointer;
+        &:hover
+        {
+            background-color: $very-dark-blue;
+        }
     }
 }

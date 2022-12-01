@@ -18,5 +18,13 @@ body
   font-family: $font-primary;
 }
 
+main
+{
+  padding: 1rem;
+  display: grid;
+  gap: 3rem;
+}
+
 @import "navbar";
 @import "hero";
+@import "news";

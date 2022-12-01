@@ -1,0 +1,46 @@
+.news
+{
+    background-color: $very-dark-blue;
+    width: 100%;
+    color: $off-white;
+    padding: 1.5rem;
+
+    &__title
+    {
+        color: $soft-orange;
+        font-size: 2.5rem;
+        font-weight: $font-bolder;
+    }
+    &__menu
+    {
+        list-style: none;
+        margin-top: 1.75rem;
+        display: grid;
+        gap: 2rem;
+    }
+    &__heading
+    {
+        font-weight: $font-bold;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        &:hover
+        {
+            color: $soft-orange;
+        }
+    }
+    &__content
+    {
+        border-bottom: 1px $dark-grayish-blue solid;
+        padding-bottom: 1rem;
+
+        &:last-child
+        {
+            border-bottom: none;
+        }
+    }
+    &__text
+    {
+        color: $dark-grayish-blue;
+        font-weight: $font-regular;
+    }
+}
