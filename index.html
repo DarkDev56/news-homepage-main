@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   <title>News homepage</title>
 </head>
 <body>
@@ -14,11 +15,11 @@
         <img src="./assets/images/logo.svg" alt="W" class="navbar__logo">
       </section>
       <section class="navbar__toggler_container">
-        <button class="navbar__toggler">
+        <button class="navbar__toggler" onclick="ToggleMenu()">
           <img id="toggler" src="./assets/images/icon-menu.svg" alt="toggle">
         </button>
       </section>
-      <nav class="navbar__links_container">
+      <nav class="navbar__links_container" id="navbar-links-menu">
         <ul class="navbar__links">
           <li class="navbar__link"><a href="#">Home</a></li>
           <li class="navbar__link"><a href="#">New</a></li>
@@ -84,5 +85,6 @@
     </section>
 
   </main>
+  <script src="./scripts/main.js"></script>
 </body>
 </html>
