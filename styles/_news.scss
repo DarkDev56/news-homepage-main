@@ -10,6 +10,11 @@
         color: $soft-orange;
         font-size: 2.5rem;
         font-weight: $font-bolder;
+        &::selection
+        {
+            color: $off-white;
+            background-color: $soft-orange;
+        }
     }
     &__menu
     {
@@ -23,15 +28,26 @@
         font-weight: $font-bold;
         margin-bottom: 1rem;
         cursor: pointer;
-        &:hover
+        &::selection
         {
-            color: $soft-orange;
+            color: $off-white;
+            background-color: $red;
         }
     }
     &__content
     {
         border-bottom: 1px $dark-grayish-blue solid;
         padding-bottom: 1rem;
+        cursor: pointer;
+
+        &:hover .news__heading
+        {
+            color: $soft-orange;
+        }
+        &:hover .news__text
+        {
+            color: $grayish-blue;
+        }
 
         &:last-child
         {
@@ -42,5 +58,10 @@
     {
         color: $dark-grayish-blue;
         font-weight: $font-regular;
+        &::selection
+        {
+            color: black;
+            background-color: $soft-orange;
+        }
     }
 }

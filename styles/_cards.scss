@@ -29,19 +29,43 @@
         &_index
         {
             font-size: 1.75rem;
-            
             color: $dark-grayish-blue;
+            &::selection
+            {
+                color: black;
+                background-color: $soft-orange;
+            }
         }
         &_heading
         {
             font-weight: $font-bolder;
             color: $very-dark-blue;
+            &::selection
+            {
+                color: black;
+                background-color: $soft-orange;
+            }
         }
         &_text
         {
             font-weight: $font-regular;
             color: $dark-grayish-blue;
+            &::selection
+            {
+                color: white;
+                background-color: $red;
+            }
+        }
+    }
+}
 
+@media screen and (min-width: 1200px)
+{
+    .cards
+    {
+        &__menu
+        {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }
