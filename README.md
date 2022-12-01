@@ -1,4 +1,4 @@
-# News Hompage
+# News Homepage
 
 ![Design preview for the News Homepage coding challenge](./design/desktop-preview.jpg)
 
