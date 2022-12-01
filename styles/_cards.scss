@@ -1,0 +1,47 @@
+.cards
+{
+    &__menu
+    {
+        display: grid;
+        gap: 1.5rem;
+    }
+    &__card
+    {
+        display: flex;
+        cursor: pointer;
+
+        &:hover &_heading
+        {
+            color: $red;
+        }
+
+        &_image
+        {
+            width: 5.5rem;
+        }
+        &_ctx
+        {
+            display: flex;
+            flex-direction: column;
+            padding-left: .5rem;
+            justify-content: space-between;
+        }
+        &_index
+        {
+            font-size: 1.75rem;
+            
+            color: $dark-grayish-blue;
+        }
+        &_heading
+        {
+            font-weight: $font-bolder;
+            color: $very-dark-blue;
+        }
+        &_text
+        {
+            font-weight: $font-regular;
+            color: $dark-grayish-blue;
+
+        }
+    }
+}
