@@ -22,6 +22,7 @@
         transition: 0.35s;
         transform-origin: top right;
         transform: scale(0);
+        z-index: 2;
 
         &::before
         {
